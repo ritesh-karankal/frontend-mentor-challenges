@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 327px;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 8px 0 0;
+}
+
+.card-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+img {
+    margin-left: 49px;
+    margin-top: 48px;
+}
+
+.heading {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    margin-left: 49px;
+    margin-top: 35px;
+}
+
+.content {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    margin-left: 49px;
+    margin-top: 25px;
+    width: 219px;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 31px;
+    border-radius: 24px;
+    border: none;
+    margin-left: 49px;
+    margin-top: 25px;
+    margin-bottom: 48px;
+    font-size: 15px;
+}
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 375px) {
+    body {
+        flex-direction: row;
+    }
+
+    .card-1 {
+        border-radius: 10px 0 0 10px;
+    }
+    .card-3 {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .content {
+
+    }
+    .btn {
+        margin-top: 83px;
+    }
+}

@@ -1,0 +1,192 @@
+/* ========================== CSS Reset ========================== */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+    padding: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    /* line-height: 1.5; */
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== */
+
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    background-color: hsl(244, 38%, 16%);
+    width: 327px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+.image {
+    height: 240px;
+    width: 327px;
+    border-radius: 8px 8px 0 0;
+    background: hsl(277, 54%, 29%);
+}
+
+img {
+    opacity: 0.4;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 40px 34px 0px;
+}
+
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 0 36px;
+    margin: 16px 0 14px;
+}
+
+.stats {
+    margin: 21px 0;
+    
+}
+
+.stats-no {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.stats:last-child {
+    /* Here selector will be .stats:last-child not .stats-no:last-child  */
+    /* because the element is child of stats not stats-no */
+    text-transform: uppercase;
+}
+
+.stat-heading {
+    font-family: "Lexend Deca";
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 20;
+}
+
+@media (min-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 1110px;
+        height: 446px;
+        border-radius: 10px;
+    }
+    .content {
+        text-align: left;
+    }
+
+    .image {
+        width: 540px;
+        height: 446px;
+        border-radius: 0 10px 10px 0;
+        
+    }
+
+    img {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .heading {
+        width: 378px;
+        font-size: 36px;
+        line-height: 44px;
+        /* padding-right: 120px; */
+        margin-left: 72px;
+        margin-top: 71px;
+    }
+
+    p {
+        line-height: 25px;
+        margin: 25px 72px 0;
+        padding: 0;
+
+        width: 346px;
+    }
+
+    .statistics {
+        display: flex;
+        justify-content: space-between;
+        margin: 72px 150px 61px 72px;
+        
+    }
+
+    .stats {
+        margin: 0;
+        text-align: left;
+        margin-left: 65px;
+        
+    }
+    .stats:first-child {
+        margin-left: 0;
+    }
+
+    .stats-no {
+        font-size: 24px;
+        
+    }
+
+    .stat-heading {
+        font-size: 13px;
+        line-height: 163.52%;
+        /* or 21px */
+
+        letter-spacing: 0.03em;
+        margin-top: 4px;
+    }
+}
